@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto Watch Video</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      width: 200px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 5px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    button:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+    #status {
+      margin-top: 10px;
+      font-size: 0.9em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h3>Auto Watch Video</h3>
+  <button id="autoPlayBtn">Tự động phát</button>
+  <button id="skipToEndBtn">Tua nhanh đến cuối</button>
+  <button id="toggleLoopBtn">Tắt/Bật lặp lại</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
